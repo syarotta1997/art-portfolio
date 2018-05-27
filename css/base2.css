@@ -1,0 +1,249 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: square;
+	margin: 0 0 0.5em;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong {
+	font-weight: bold;
+}
+ h2, h3, h5, h6 {
+	font-family: sommet-slab-1, sommet-slab-2, Georgia, serif;
+	font-weight: normal;
+	line-height: 1.2em;
+	padding: 0.5em 0 0.25em;
+}
+
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-family:Electrolize;
+	font-weight: light;
+	line-height: 1.2em;
+	padding: 0.5em 0 0.25em;
+}
+
+h5, h6 {
+	font-size: 1em;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	border: none;
+	background: url(../images/bg_hr1.png) center center no-repeat;
+	height: 10px;
+}
+
+#logo {
+	padding-bottom: 0;
+}
+
+.logo {
+	color: #11bad3;
+	font-family: Electrolize;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+.logo b {
+	font-weight: bold;
+}
+
+.banner-wrap {
+	text-align: center;
+	width:100%;
+	background: rgba(0,0,0, 0.7);
+	bottom:0;
+	position:fixed;
+	z-index:+1;
+}
+.banner-wrap a, a:link, a:visited {
+	display:block;
+	width:100%;
+	color: #FFF;
+	text-decoration: none;
+	-webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+.banner-wrap p{
+	margin: 0 0 0.5em;
+	max-width: 634px;
+}
+.banner-wrap a:hover, a:active {
+	border-bottom:0;
+	background-color:rgba(0,0,0, 0.85);
+	color:#0CF;
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+
+.grid {
+	padding: 0 20px;
+}
+
+.row {
+	margin-bottom: 1em;
+}
+
+.feature p{
+	border-right: 0px solid #ccc;
+	border-bottom: 0px solid #ccc;
+	font-family: Calibri;
+	font-size:16px;
+	text-align:justify;
+	padding: 1em;
+	margin: 0 0 1em;
+	line-height:1.5em;
+}
+.feature h2 {
+	border-right: 0px solid #ccc;
+	border-bottom: 0px solid #ccc;
+	font-weight: bold;
+	font-family:Michroma;
+	font-size:30px;
+	text-align: center;
+	margin-bottom:50px;
+}
+
+
+
+.example-grids {
+	margin-bottom: 4em;
+}
+
+.example-grids .row { margin-bottom: 0; }
+
+
+
+.footer{
+	width:100%;
+	height:170px;
+	text-align:center;
+	font-family:Electrolize;
+	font-weight:bold;
+}
+
+.footer p{
+	margin-left:47%;
+}
+.footer a {
+	text-align: center;
+	max-width: 70px;
+	max-height:70px;
+	border-radius:50%;	
+	background-color:#000;
+	color: #FFF;	
+	
+}
+.footer a:hover{
+	border-bottom:0;
+	color:#0CF;
+  -webkit-transition: color 500ms;
+  -moz-transition:color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+}
+
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+section.module.parallax {
+  height: 250px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 400px;
+  font-family:Electrolize;
+font-weight:700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+  background-color:#AD99BF;
+}
+section.module.parallax-2 {
+  background-image: url("../img/2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/3.jpg");
+}
+section.module.parallax-4 {
+  background-image: url("../img/4.jpg");
+}

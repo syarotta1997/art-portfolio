@@ -1,0 +1,58 @@
+/*	SimpleGrid - a fork of CSSGrid by Crowd Favorite (https://github.com/crowdfavorite/css-grid)
+ *	http://simplegrid.info
+ *	by Conor Muirhead (http://conor.cc) of Early LLC (http://earlymade.com)	
+ *  License: http://creativecommons.org/licenses/MIT/	*/
+
+/* Containers */
+body { font-size: 1.125em; }
+.grid{ width:1206px; }
+
+/* 6-Col Grid Sizes */
+.slot-0,.slot-1,.slot-2,.slot-3,.slot-4,.slot-5{ width:176px; } /* Sixths */
+.slot-0-1,.slot-1-2,.slot-2-3,.slot-3-4,.slot-4-5{ width:382px; } /* Thirds */
+.slot-0-1-2-3,.slot-1-2-3-4,.slot-2-3-4-5{ width:794px; } /* Two-Thirds */
+.slot-0-1-2-3-4,.slot-1-2-3-4-5{ width:1000px; } /* Five-Sixths */
+
+/* 4-Col Grid Sizes */
+.slot-6,.slot-7,.slot-8,.slot-9{ width:279px; } /* Quarters */
+.slot-6-7-8,.slot-7-8-9{ width:897px; } /* Three-Quarters */
+
+/* 6-Col/4-Col Shared Grid Sizes */
+.slot-0-1-2,.slot-1-2-3,.slot-2-3-4,.slot-3-4-5, .slot-6-7,.slot-7-8,.slot-8-9{ width:588px; } /* Halves */
+
+ul.img-list li {
+  display: inline-block;
+  height: 220px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 382px;
+}
+span.text-content {
+  background: rgba(0,0,0,0.85);
+  font-family:Electrolize;
+  font-size:32px;
+  font-weight:800;
+  color:#0CF;
+  cursor: pointer;
+  display: table;
+  height: 220px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 382px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family:Electrolize;
+  font-size: 160px;
+    line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
